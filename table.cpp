@@ -6,7 +6,6 @@ using namespace std;
 int main()
 {
     int n{12};
-    vector<int> table;
 
     int sum{0};
 

@@ -9,7 +9,7 @@ using namespace std;
 pair<int, int> firstAndLast(vector<int> v, int n)
 {
     int startIdx{0};
-    sort(v.begin(), v.end());
+    // sort(v.begin(), v.end());
 
     for(int i = 0; i < v.size(); i++)
     {

@@ -15,13 +15,13 @@ string DecToN(int n, int num)
 
         if(temp < 10)
         {
-            inN[i] = temp + 48;
+            inN[i] = temp + 48;  // temp + 58 - 9
             ++i;
         }
 
         else
         {
-            inN[i] = temp + 55;
+            inN[i] = temp + 55; //  temp - 9 + 64
             ++i;
         }
 

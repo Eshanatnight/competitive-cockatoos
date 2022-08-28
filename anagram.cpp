@@ -1,6 +1,5 @@
 #include "bits/stdc++.h"
 
-
 using namespace std;
 
 string isAnnagram(string s1, string s2)

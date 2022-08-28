@@ -3,7 +3,8 @@
 using namespace std;
 
 /*
-    // given an array, and a value sum if the sum of the smallest number is < `sum` then return sum else return 0
+    // given an array, and a value `sum` if the sum of the smallest 2 numbers is < `sum` 
+    // then return result else return 0
 */
 
 int productSmallPair(int sum, vector<int> arr)
