@@ -88,11 +88,11 @@
 template<typename T>
 void print(T a)
 {
-    std::cout << std::boolalpha << a << std::endl;
+    std::cout << std::endl << std::boolalpha << a << std::endl;
 }
 
 template<typename T>
 void print_container(T a)
 {
-    for_each(a.begin(), a.end(), [](int c){ std::cout << c << std::endl;});
+    for_each(a.begin(), a.end(), [](int c){ std::cout << c << " ";});
 }
