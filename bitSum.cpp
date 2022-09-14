@@ -4,23 +4,22 @@ using namespace std;
 
 unsigned int SumOfSetBits(int n, int set)
 {
-    int sum = 0;
-    for(int i = 0; i < (pow(n, 2) -1); ++i)
-    {
-        if(bitset<1024>(i).count() == set)
-        {
-            sum += i;
-        }
-    }
+	int sum = 0;
+	for(int i = 0; i < (pow(n, 2) - 1); ++i)
+	{
+		if(bitset<1024>(i).count() == set)
+		{
+			sum += i;
+		}
+	}
 
-    return sum;
+	return sum;
 }
-
 
 int main()
 {
-    print(SumOfSetBits(3, 2) == 14);
-    print(SumOfSetBits(4, 1) == 15);
+	print(SumOfSetBits(3, 2) == 14);
+	print(SumOfSetBits(4, 1) == 15);
 
-    return 0;
+	return 0;
 }

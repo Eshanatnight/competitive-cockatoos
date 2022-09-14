@@ -11,49 +11,47 @@ of array ‘arr’ represents the amount of food present in ‘i+1’ house numb
 */
 int calculate(int r, int unit, int arr[], int n)
 {
-    if(arr == nullptr || n == 0)
-    {
-        return -1;
-    }
+	if(arr == nullptr || n == 0)
+	{
+		return -1;
+	}
 
-    int foodRequired = r * unit;
-    int foodTillNow{0};
-    int house{0};
+	int foodRequired = r * unit;
+	int foodTillNow { 0 };
+	int house { 0 };
 
-    for(; house < n; ++house)
-    {
-        foodTillNow += arr[house];
+	for(; house < n; ++house)
+	{
+		foodTillNow += arr[house];
 
-        if(foodTillNow >= foodRequired)
-        {
-            break;
-        }
-    }
+		if(foodTillNow >= foodRequired)
+		{
+			break;
+		}
+	}
 
-    if(foodRequired > foodTillNow)
-    {
-        return 0;
-    }
+	if(foodRequired > foodTillNow)
+	{
+		return 0;
+	}
 
-    return house + 1;
+	return house + 1;
 }
-
-
 
 int main()
 {
-    int r;
-    cin >> r;
-    int unit;
-    cin >> unit;
-    int n;
-    cin >> n;
-    int arr[n];
+	int r;
+	cin >> r;
+	int unit;
+	cin >> unit;
+	int n;
+	cin >> n;
+	int arr[n];
 
-    for (int i = 0; i < n; ++i)
-    {
-        cin >> arr[i];
-    }
-    cout << calculate (r, unit, arr, n);
-    return 0;
+	for(int i = 0; i < n; ++i)
+	{
+		cin >> arr[i];
+	}
+	cout << calculate(r, unit, arr, n);
+	return 0;
 }

@@ -8,38 +8,38 @@ using namespace std;
 
 bool isPalindrome(int n)
 {
-    int temp = n;
-    int rev{0};
-    while(temp > 0)
-    {
-        rev = rev * 10 + (temp % 10);
-        temp /= 10;
-    }
+	int temp = n;
+	int rev { 0 };
+	while(temp > 0)
+	{
+		rev = rev * 10 + (temp % 10);
+		temp /= 10;
+	}
 
-    return n == rev;
+	return n == rev;
 }
 
 int main()
 {
-    int start{10}, end{80};
+	int start { 10 }, end { 80 };
 
-    for(int i = start; i < end; ++i)
-    {
-        if(isPalindrome(i))
-        {
-            cout << i << ", ";
-        }
-    }
+	for(int i = start; i < end; ++i)
+	{
+		if(isPalindrome(i))
+		{
+			cout << i << ", ";
+		}
+	}
 
-    cout << endl;
+	cout << endl;
 
-    for(int i = 100; i < 200; ++i)
-    {
-        if(isPalindrome(i))
-        {
-            cout << i << ", ";
-        }
-    }
+	for(int i = 100; i < 200; ++i)
+	{
+		if(isPalindrome(i))
+		{
+			cout << i << ", ";
+		}
+	}
 
-    return 0;
+	return 0;
 }
