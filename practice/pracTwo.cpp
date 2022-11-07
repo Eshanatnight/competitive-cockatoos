@@ -6,21 +6,21 @@ using namespace std;
 // and print the character and its occurence in the string
 void occurance(string str)
 {
-    map<char, int> m;
-    transform(str.begin(), str.end(), str.begin(), ::tolower);
-    for (int i = 0; i < str.length(); i++)
-    {
-        m[str[i]]++;
-    }
-    for (auto i : m)
-    {
-        if(i.first == ' ') continue;
-        cout << i.first << " " << i.second << endl;
-    }
+	map<char, int> m;
+	transform(str.begin(), str.end(), str.begin(), ::tolower);
+	for(int i = 0; i < str.length(); i++)
+	{
+		m[str[i]]++;
+	}
+	for(auto i: m)
+	{
+		if(i.first == ' ') continue;
+		cout << i.first << " " << i.second << endl;
+	}
 }
 
 int main()
 {
-    string str = "Eshan Chatterjee";
-    occurance(str);
+	string str = "Eshan Chatterjee";
+	occurance(str);
 }
