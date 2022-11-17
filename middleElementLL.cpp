@@ -1,7 +1,4 @@
-//{ Driver Code Starts
-// Initial template for C++
-
-#include <bits/stdc++.h>
+#include "bits/stdc++.h"
 using namespace std;
 
 struct Node
@@ -68,11 +65,8 @@ public:
 	}
 };
 
-//{ Driver Code Starts.
-
 int main()
 {
-	// code
 	int t;
 	cin >> t;
 	while(t--)
@@ -95,5 +89,3 @@ int main()
 	}
 	return 0;
 }
-
-// } Driver Code Ends

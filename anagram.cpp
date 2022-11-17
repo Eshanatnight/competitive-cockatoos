@@ -19,8 +19,8 @@ string isAnnagram(string s1, string s2)
 
 bool isAnnagram_2(string s1, string s2)
 {
-	array<int, 26> arr;
-	arr.fill(0);
+	array<int, 26> arr = {0};
+	//arr.fill(0);
 
 	transform(s1.begin(), s1.end(), s1.begin(), [](char a) { return tolower(a); });
 	transform(s2.begin(), s2.end(), s2.begin(), [](char a) { return tolower(a); });

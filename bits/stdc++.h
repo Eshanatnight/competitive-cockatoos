@@ -16,8 +16,6 @@
 #include <cstdlib>
 #include <cstring>
 #include <ctime>
-
-#if __cplusplus >= 201103L
 #include <ccomplex>
 #include <cfenv>
 #include <cinttypes>
@@ -26,7 +24,6 @@
 #include <ctgmath>
 #include <cwchar>
 #include <cwctype>
-#endif
 
 // C++
 #include <algorithm>
@@ -61,8 +58,6 @@
 #include <utility>
 #include <valarray>
 #include <vector>
-
-#if __cplusplus >= 201103L
 #include <array>
 #include <atomic>
 #include <chrono>
@@ -82,8 +77,6 @@
 #include <type_traits>
 #include <unordered_map>
 #include <unordered_set>
-#endif
-
 
 template<typename T>
 void print(T a)

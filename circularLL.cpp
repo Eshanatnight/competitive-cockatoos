@@ -1,5 +1,3 @@
-//{ Driver Code Starts
-// C program to find n'th Node in linked list
 #include "bits/stdc++.h"
 using namespace std;
 
@@ -16,10 +14,8 @@ struct Node
 	}
 };
 
-/* Function to get the middle of the linked list*/
 bool isCircular(struct Node* head);
 
-/* Driver program to test above function*/
 int main()
 {
 	int T, i, n, l, k;
