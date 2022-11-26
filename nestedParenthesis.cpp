@@ -13,18 +13,13 @@ int maxDepth(string& s)
 
 	for(int i = 0; i < s.size(); i++)
 	{
-
 		if(s[i] == '(') st.push(i); // pushing the bracket in the stack
 
 		else if(s[i] == ')')
 		{
-
 			if(count < st.size()) count = st.size();
-
 			/*keeping track of the parenthesis and storing
-
 			it before removing it when it gets balanced*/
-
 			st.pop();
 		}
 	}

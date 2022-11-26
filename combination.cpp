@@ -4,7 +4,7 @@ using namespace std;
 
 int combination(int n, int r)
 {
-	if(r > n - r) r = n - r;
+	if(r > n - r) r = n - r; // ncr = ncn-r
 
 	int ans = 1;
 
