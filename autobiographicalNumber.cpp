@@ -28,5 +28,5 @@ int findAutoCount(const string n)
 int main()
 {
 	string n("1210");
-	print(findAutoCount(n));
+	print(findAutoCount(n)); // 3
 }

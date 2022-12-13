@@ -4,5 +4,29 @@
     "C_Cpp.clang_format_sortIncludes": true,
     "C_Cpp.default.compilerPath": "C:\\msys64\\clang64\\bin\\clang++.exe",
     "C_Cpp.default.cppStandard": "c++17",
-    "C_Cpp.default.cStandard": "c99"
+    "C_Cpp.default.cStandard": "c99",
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}",
+    ],
+    "files.associations": {
+        "array": "cpp",
+        "bitset": "cpp",
+        "deque": "cpp",
+        "format": "cpp",
+        "initializer_list": "cpp",
+        "list": "cpp",
+        "queue": "cpp",
+        "random": "cpp",
+        "ranges": "cpp",
+        "regex": "cpp",
+        "span": "cpp",
+        "stack": "cpp",
+        "type_traits": "cpp",
+        "valarray": "cpp",
+        "vector": "cpp",
+        "xhash": "cpp",
+        "xstring": "cpp",
+        "xtree": "cpp",
+        "xutility": "cpp"
+    }
 }
